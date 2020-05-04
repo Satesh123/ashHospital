@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: regression.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 122.737 s - in regression.TestRunner
