@@ -12,6 +12,9 @@ public class HomePage extends basePage {
     @FindBy(how = How.LINK_TEXT, using = "Users")
     WebElement usersLink;
 
+    @FindBy(how = How.ID, using = "sample_editable_1_new")
+    WebElement addNew;
+
     @FindBy(how = How.XPATH, using = "//tr[4]//td[8]//a[1]")
     WebElement edit;
 
@@ -22,6 +25,11 @@ public class HomePage extends basePage {
     public void gotoUserListPage() {
         mastersLink.click();
         usersLink.click();
+    }
+    public void addNewUser(){
+        gotoUserListPage();
+        addNew.click();
+
     }
     public void clickEdit(){
 

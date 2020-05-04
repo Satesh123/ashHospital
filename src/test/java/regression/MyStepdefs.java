@@ -1,6 +1,5 @@
 package regression;
 
-import cucumber.api.PendingException;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -13,6 +12,8 @@ import org.openqa.selenium.TakesScreenshot;
 import regression.PageObject.*;
 
 public class MyStepdefs extends TestRunner {
+
+
     public LoginPage loginPage;
     public HomePage homePage;
     public UserListPage userListPage;
@@ -26,7 +27,7 @@ public class MyStepdefs extends TestRunner {
         userListPage = new UserListPage();
         userPage = new CreateEditUserPage();
         grouptestPage = new GroupTestPage();
-        driver.get("http://ahs.bananaapps.co.uk/");
+
     }
 
     @After
@@ -43,6 +44,7 @@ public class MyStepdefs extends TestRunner {
     public void superadminLogedIn() {
         loginPage.login("07442382353", "Superadmin");
     }
+
     @And("^He navigate to Masters screen and selectUsers$")
     public void heNavigateToMastersScreenAndSelectUsers() {
         homePage.gotoUserListPage();
@@ -57,6 +59,7 @@ public class MyStepdefs extends TestRunner {
     public void heUpdatesDetailsAndSelectUserTypeAsAndClickSubmit(String UserType) throws Throwable {
         userPage.editUserDetails(UserType);
     }
+
     @Then("^All the updated data should be available for the selected user$")
     public void allTheUpdatedDataShouldBeAvailableForTheSelectedUser() {
         userPage.isUserEdited();
@@ -71,6 +74,7 @@ public class MyStepdefs extends TestRunner {
     public void inGroupTestNameSelectAddNew() {
         grouptestPage.addGroupTest();
     }
+
     @When("^Add group test name and price and click submit$")
     public void addGroupTestNameAndPriceAndClickSubmit() {
         grouptestPage.createNewGroupTest();
@@ -81,17 +85,14 @@ public class MyStepdefs extends TestRunner {
         grouptestPage.newGroupTestCreated();
     }
 
-    @When("^He clear and edit new details accept one name as \"([^\"]*)\"/MobileNo as \"([^\"]*)\"/Password as \"([^\"]*)\"/UserType as \"([^\"]*)\" and Branchname as \"([^\"]*)\" and click submit$")
-    public void heClearAndEditNewDetailsAcceptOneNameAsMobileNoAsPasswordAsUserTypeAsAndBranchnameAsAndClickSubmit(String Name, String MobileNumber, String Password, String UserType, String BranchName) throws Throwable {
 
-        userPage.canNoteditUserdetailswithoutRequiredfield(Name, MobileNumber, Password, UserType, BranchName);
-
-        throw new PendingException();
+    @And("^He navigate to Add New$")
+    public void heNavigateToAddNew() {
+        homePage.addNewUser();
     }
 
-    @Then("^error message should be appear as \"([^\"]*)\"$")
-    public void errorMessageShouldBeAppearAs(String ErrorMessage) throws Throwable {
-        userPage.getError(ErrorMessage);
-        throw new PendingException();
+    @Then("^New user created successfully$")
+    public void newUserCreatedSuccessfully() {
+        userPage.isUserCreated();
     }
 }

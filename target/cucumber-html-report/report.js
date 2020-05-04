@@ -7,137 +7,137 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 4,
-  "name": "1 Verify Superadmin can Edit user details",
+  "line": 28,
+  "name": "Super admin can create a new user",
   "description": "",
-  "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details",
+  "id": "supperadmin-access;super-admin-can-create-a-new-user",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 3,
-      "name": "@01"
+      "line": 27,
+      "name": "@03"
     }
   ]
 });
 formatter.step({
-  "line": 5,
+  "line": 29,
   "name": "SuperAdmin logedIn",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 30,
   "name": "He navigate to Masters screen and selectUsers",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
-  "name": "He select Edit from action column",
+  "line": 31,
+  "name": "He navigate to Add New",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 32,
   "name": "He updates details and select UserType as \"\u003cUserType\u003e\" and click submit.",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "All the updated data should be available for the selected user",
+  "line": 33,
+  "name": "New user created successfully",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 10,
+  "line": 34,
   "name": "",
   "description": "",
-  "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;",
+  "id": "supperadmin-access;super-admin-can-create-a-new-user;",
   "rows": [
     {
       "cells": [
         "UserType"
       ],
-      "line": 11,
-      "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;1"
+      "line": 35,
+      "id": "supperadmin-access;super-admin-can-create-a-new-user;;1"
     },
     {
       "cells": [
         "SuperAdmin"
       ],
-      "line": 12,
-      "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;2"
+      "line": 36,
+      "id": "supperadmin-access;super-admin-can-create-a-new-user;;2"
     },
     {
       "cells": [
         "CallCenter"
       ],
-      "line": 13,
-      "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;3"
+      "line": 37,
+      "id": "supperadmin-access;super-admin-can-create-a-new-user;;3"
     },
     {
       "cells": [
         "LabTechnican"
       ],
-      "line": 14,
-      "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;4"
+      "line": 38,
+      "id": "supperadmin-access;super-admin-can-create-a-new-user;;4"
     },
     {
       "cells": [
         "Admin"
       ],
-      "line": 15,
-      "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;5"
+      "line": 39,
+      "id": "supperadmin-access;super-admin-can-create-a-new-user;;5"
     },
     {
       "cells": [
         "ILDBoy"
       ],
-      "line": 16,
-      "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;6"
+      "line": 40,
+      "id": "supperadmin-access;super-admin-can-create-a-new-user;;6"
     },
     {
       "cells": [
         "Manager"
       ],
-      "line": 17,
-      "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;7"
+      "line": 41,
+      "id": "supperadmin-access;super-admin-can-create-a-new-user;;7"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 2406072700,
+  "duration": 3091525200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 12,
-  "name": "1 Verify Superadmin can Edit user details",
+  "line": 36,
+  "name": "Super admin can create a new user",
   "description": "",
-  "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;2",
+  "id": "supperadmin-access;super-admin-can-create-a-new-user;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 3,
-      "name": "@01"
+      "line": 27,
+      "name": "@03"
     }
   ]
 });
 formatter.step({
-  "line": 5,
+  "line": 29,
   "name": "SuperAdmin logedIn",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 30,
   "name": "He navigate to Masters screen and selectUsers",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
-  "name": "He select Edit from action column",
+  "line": 31,
+  "name": "He navigate to Add New",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 32,
   "name": "He updates details and select UserType as \"SuperAdmin\" and click submit.",
   "matchedColumns": [
     0
@@ -145,29 +145,29 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "All the updated data should be available for the selected user",
+  "line": 33,
+  "name": "New user created successfully",
   "keyword": "Then "
 });
 formatter.match({
   "location": "MyStepdefs.superadminLogedIn()"
 });
 formatter.result({
-  "duration": 3583899500,
+  "duration": 4232183700,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.heNavigateToMastersScreenAndSelectUsers()"
 });
 formatter.result({
-  "duration": 6697405300,
+  "duration": 6870712600,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.heSelectEditFromActionColumn()"
+  "location": "MyStepdefs.heNavigateToAddNew()"
 });
 formatter.result({
-  "duration": 553954800,
+  "duration": 7517963200,
   "status": "passed"
 });
 formatter.match({
@@ -180,56 +180,56 @@ formatter.match({
   "location": "MyStepdefs.heUpdatesDetailsAndSelectUserTypeAsAndClickSubmit(String)"
 });
 formatter.result({
-  "duration": 7859541100,
+  "duration": 8821708700,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.allTheUpdatedDataShouldBeAvailableForTheSelectedUser()"
+  "location": "MyStepdefs.newUserCreatedSuccessfully()"
 });
 formatter.result({
-  "duration": 43843400,
+  "duration": 116629000,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 440334900,
+  "duration": 465629500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 477993700,
+  "duration": 687933700,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 13,
-  "name": "1 Verify Superadmin can Edit user details",
+  "line": 37,
+  "name": "Super admin can create a new user",
   "description": "",
-  "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;3",
+  "id": "supperadmin-access;super-admin-can-create-a-new-user;;3",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 3,
-      "name": "@01"
+      "line": 27,
+      "name": "@03"
     }
   ]
 });
 formatter.step({
-  "line": 5,
+  "line": 29,
   "name": "SuperAdmin logedIn",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 30,
   "name": "He navigate to Masters screen and selectUsers",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
-  "name": "He select Edit from action column",
+  "line": 31,
+  "name": "He navigate to Add New",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 32,
   "name": "He updates details and select UserType as \"CallCenter\" and click submit.",
   "matchedColumns": [
     0
@@ -237,29 +237,29 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "All the updated data should be available for the selected user",
+  "line": 33,
+  "name": "New user created successfully",
   "keyword": "Then "
 });
 formatter.match({
   "location": "MyStepdefs.superadminLogedIn()"
 });
 formatter.result({
-  "duration": 1161848700,
+  "duration": 1817409300,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.heNavigateToMastersScreenAndSelectUsers()"
 });
 formatter.result({
-  "duration": 6868695800,
+  "duration": 6932188100,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.heSelectEditFromActionColumn()"
+  "location": "MyStepdefs.heNavigateToAddNew()"
 });
 formatter.result({
-  "duration": 635071000,
+  "duration": 8168418500,
   "status": "passed"
 });
 formatter.match({
@@ -272,56 +272,56 @@ formatter.match({
   "location": "MyStepdefs.heUpdatesDetailsAndSelectUserTypeAsAndClickSubmit(String)"
 });
 formatter.result({
-  "duration": 7538461200,
+  "duration": 8376054700,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.allTheUpdatedDataShouldBeAvailableForTheSelectedUser()"
+  "location": "MyStepdefs.newUserCreatedSuccessfully()"
 });
 formatter.result({
-  "duration": 143756700,
+  "duration": 244762900,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 395457500,
+  "duration": 326442100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 423788400,
+  "duration": 500667700,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 14,
-  "name": "1 Verify Superadmin can Edit user details",
+  "line": 38,
+  "name": "Super admin can create a new user",
   "description": "",
-  "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;4",
+  "id": "supperadmin-access;super-admin-can-create-a-new-user;;4",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 3,
-      "name": "@01"
+      "line": 27,
+      "name": "@03"
     }
   ]
 });
 formatter.step({
-  "line": 5,
+  "line": 29,
   "name": "SuperAdmin logedIn",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 30,
   "name": "He navigate to Masters screen and selectUsers",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
-  "name": "He select Edit from action column",
+  "line": 31,
+  "name": "He navigate to Add New",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 32,
   "name": "He updates details and select UserType as \"LabTechnican\" and click submit.",
   "matchedColumns": [
     0
@@ -329,29 +329,29 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "All the updated data should be available for the selected user",
+  "line": 33,
+  "name": "New user created successfully",
   "keyword": "Then "
 });
 formatter.match({
   "location": "MyStepdefs.superadminLogedIn()"
 });
 formatter.result({
-  "duration": 1101278300,
+  "duration": 1293757300,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.heNavigateToMastersScreenAndSelectUsers()"
 });
 formatter.result({
-  "duration": 6580049500,
+  "duration": 6631437200,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.heSelectEditFromActionColumn()"
+  "location": "MyStepdefs.heNavigateToAddNew()"
 });
 formatter.result({
-  "duration": 666434800,
+  "duration": 7848659000,
   "status": "passed"
 });
 formatter.match({
@@ -364,56 +364,56 @@ formatter.match({
   "location": "MyStepdefs.heUpdatesDetailsAndSelectUserTypeAsAndClickSubmit(String)"
 });
 formatter.result({
-  "duration": 7918500800,
+  "duration": 7997355700,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.allTheUpdatedDataShouldBeAvailableForTheSelectedUser()"
+  "location": "MyStepdefs.newUserCreatedSuccessfully()"
 });
 formatter.result({
-  "duration": 342527900,
+  "duration": 254571300,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded2.png");
 formatter.after({
-  "duration": 371604700,
+  "duration": 343387000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 401106700,
+  "duration": 435077500,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 15,
-  "name": "1 Verify Superadmin can Edit user details",
+  "line": 39,
+  "name": "Super admin can create a new user",
   "description": "",
-  "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;5",
+  "id": "supperadmin-access;super-admin-can-create-a-new-user;;5",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 3,
-      "name": "@01"
+      "line": 27,
+      "name": "@03"
     }
   ]
 });
 formatter.step({
-  "line": 5,
+  "line": 29,
   "name": "SuperAdmin logedIn",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 30,
   "name": "He navigate to Masters screen and selectUsers",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
-  "name": "He select Edit from action column",
+  "line": 31,
+  "name": "He navigate to Add New",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 32,
   "name": "He updates details and select UserType as \"Admin\" and click submit.",
   "matchedColumns": [
     0
@@ -421,29 +421,29 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "All the updated data should be available for the selected user",
+  "line": 33,
+  "name": "New user created successfully",
   "keyword": "Then "
 });
 formatter.match({
   "location": "MyStepdefs.superadminLogedIn()"
 });
 formatter.result({
-  "duration": 1105196600,
+  "duration": 1410977100,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.heNavigateToMastersScreenAndSelectUsers()"
 });
 formatter.result({
-  "duration": 6823169100,
+  "duration": 7187835000,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.heSelectEditFromActionColumn()"
+  "location": "MyStepdefs.heNavigateToAddNew()"
 });
 formatter.result({
-  "duration": 681793900,
+  "duration": 8200585200,
   "status": "passed"
 });
 formatter.match({
@@ -456,56 +456,56 @@ formatter.match({
   "location": "MyStepdefs.heUpdatesDetailsAndSelectUserTypeAsAndClickSubmit(String)"
 });
 formatter.result({
-  "duration": 7859013000,
+  "duration": 10329032600,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.allTheUpdatedDataShouldBeAvailableForTheSelectedUser()"
+  "location": "MyStepdefs.newUserCreatedSuccessfully()"
 });
 formatter.result({
-  "duration": 314103300,
+  "duration": 93787500,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded3.png");
 formatter.after({
-  "duration": 374413600,
+  "duration": 595387700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 404269500,
+  "duration": 416411500,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 16,
-  "name": "1 Verify Superadmin can Edit user details",
+  "line": 40,
+  "name": "Super admin can create a new user",
   "description": "",
-  "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;6",
+  "id": "supperadmin-access;super-admin-can-create-a-new-user;;6",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 3,
-      "name": "@01"
+      "line": 27,
+      "name": "@03"
     }
   ]
 });
 formatter.step({
-  "line": 5,
+  "line": 29,
   "name": "SuperAdmin logedIn",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 30,
   "name": "He navigate to Masters screen and selectUsers",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
-  "name": "He select Edit from action column",
+  "line": 31,
+  "name": "He navigate to Add New",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 32,
   "name": "He updates details and select UserType as \"ILDBoy\" and click submit.",
   "matchedColumns": [
     0
@@ -513,29 +513,29 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "All the updated data should be available for the selected user",
+  "line": 33,
+  "name": "New user created successfully",
   "keyword": "Then "
 });
 formatter.match({
   "location": "MyStepdefs.superadminLogedIn()"
 });
 formatter.result({
-  "duration": 1110361600,
+  "duration": 1249323300,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.heNavigateToMastersScreenAndSelectUsers()"
 });
 formatter.result({
-  "duration": 6726217500,
+  "duration": 8329103700,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.heSelectEditFromActionColumn()"
+  "location": "MyStepdefs.heNavigateToAddNew()"
 });
 formatter.result({
-  "duration": 799790900,
+  "duration": 8811619700,
   "status": "passed"
 });
 formatter.match({
@@ -548,56 +548,56 @@ formatter.match({
   "location": "MyStepdefs.heUpdatesDetailsAndSelectUserTypeAsAndClickSubmit(String)"
 });
 formatter.result({
-  "duration": 8408116400,
+  "duration": 9000803100,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.allTheUpdatedDataShouldBeAvailableForTheSelectedUser()"
+  "location": "MyStepdefs.newUserCreatedSuccessfully()"
 });
 formatter.result({
-  "duration": 83774500,
+  "duration": 516159200,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded4.png");
 formatter.after({
-  "duration": 543989300,
+  "duration": 386266900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 382781300,
+  "duration": 433234100,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 17,
-  "name": "1 Verify Superadmin can Edit user details",
+  "line": 41,
+  "name": "Super admin can create a new user",
   "description": "",
-  "id": "supperadmin-access;1-verify-superadmin-can-edit-user-details;;7",
+  "id": "supperadmin-access;super-admin-can-create-a-new-user;;7",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 3,
-      "name": "@01"
+      "line": 27,
+      "name": "@03"
     }
   ]
 });
 formatter.step({
-  "line": 5,
+  "line": 29,
   "name": "SuperAdmin logedIn",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 30,
   "name": "He navigate to Masters screen and selectUsers",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
-  "name": "He select Edit from action column",
+  "line": 31,
+  "name": "He navigate to Add New",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 32,
   "name": "He updates details and select UserType as \"Manager\" and click submit.",
   "matchedColumns": [
     0
@@ -605,29 +605,29 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "All the updated data should be available for the selected user",
+  "line": 33,
+  "name": "New user created successfully",
   "keyword": "Then "
 });
 formatter.match({
   "location": "MyStepdefs.superadminLogedIn()"
 });
 formatter.result({
-  "duration": 1077520400,
+  "duration": 1419703000,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.heNavigateToMastersScreenAndSelectUsers()"
 });
 formatter.result({
-  "duration": 6903277900,
+  "duration": 8094495000,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.heSelectEditFromActionColumn()"
+  "location": "MyStepdefs.heNavigateToAddNew()"
 });
 formatter.result({
-  "duration": 828627400,
+  "duration": 10766476500,
   "status": "passed"
 });
 formatter.match({
@@ -640,102 +640,19 @@ formatter.match({
   "location": "MyStepdefs.heUpdatesDetailsAndSelectUserTypeAsAndClickSubmit(String)"
 });
 formatter.result({
-  "duration": 7410853400,
+  "duration": 10079316200,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.allTheUpdatedDataShouldBeAvailableForTheSelectedUser()"
+  "location": "MyStepdefs.newUserCreatedSuccessfully()"
 });
 formatter.result({
-  "duration": 98271500,
+  "duration": 85274900,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded5.png");
 formatter.after({
-  "duration": 580705900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 391052500,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 20,
-  "name": "2 Verify SuperAdmin can create group test",
-  "description": "",
-  "id": "supperadmin-access;2-verify-superadmin-can-create-group-test",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 19,
-      "name": "@02"
-    }
-  ]
-});
-formatter.step({
-  "line": 21,
-  "name": "SuperAdmin logedIn",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 22,
-  "name": "He navigate to Masters screen and select Group Test",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "In GroupTestName select AddNew",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 24,
-  "name": "Add group test name and price and click submit",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 25,
-  "name": "Group test created successfully",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MyStepdefs.superadminLogedIn()"
-});
-formatter.result({
-  "duration": 1031427000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyStepdefs.heNavigateToMastersScreenAndSelectGroupTest()"
-});
-formatter.result({
-  "duration": 1755484100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyStepdefs.inGroupTestNameSelectAddNew()"
-});
-formatter.result({
-  "duration": 419474500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyStepdefs.addGroupTestNameAndPriceAndClickSubmit()"
-});
-formatter.result({
-  "duration": 1305668400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyStepdefs.groupTestCreatedSuccessfully()"
-});
-formatter.result({
-  "duration": 139588600,
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded6.png");
-formatter.after({
-  "duration": 653344600,
+  "duration": 727397700,
   "status": "passed"
 });
 });

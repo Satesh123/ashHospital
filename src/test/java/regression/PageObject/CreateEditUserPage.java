@@ -46,20 +46,21 @@ public class CreateEditUserPage extends basePage {
     Fairy fairy = Fairy.create();
     Person person = fairy.person();
 
-    public void createUser(String user) {
+    public void createUser(String UserType) {
 
         name.sendKeys(person.getFullName());
         mobileNumber.sendKeys(person.getTelephoneNumber());
         emailId.sendKeys(person.getEmail());
         password.sendKeys(person.getPassword());
         Select selectUserType = new Select(userType);
-        selectUserType.selectByVisibleText(user);
+        selectUserType.selectByVisibleText(UserType);
         Select selectBranch = new Select(branchId);
         selectBranch.selectByVisibleText("Visakhapatnam");
         submitButton.click();
 
     }
-    private void clearUserDetails(){
+
+    private void clearUserDetails() {
         name.clear();
         mobileNumber.clear();
         emailId.clear();
@@ -84,40 +85,6 @@ public class CreateEditUserPage extends basePage {
         Select selectBranch = new Select(branchId);
         selectBranch.selectByVisibleText("Visakhapatnam");
         editSubmitBtn.click();
-    }
-    public void canNoteditUserdetailswithoutRequiredfield(String Name, String MobileNumber, String Password,
-                                                          String UserType, String BranchName) throws InterruptedException {
-        clearUserDetails();
-
-        name.sendKeys(Name);
-        mobileNumber.sendKeys(MobileNumber);
-        emailId.sendKeys(person.getEmail());
-        password.sendKeys(Password);
-        Select selectUserType = new Select(userType);
-        selectUserType.selectByVisibleText(UserType);
-        Select selectBranch = new Select(branchId);
-        selectBranch.selectByVisibleText(BranchName);
-        editSubmitBtn.click();
-
-
-    }
-    public void getError(String ErrorMessage){
-
-//        JavascriptExecutor js = (JavascriptExecutor)driver;
-//
-//        WebElement field = name;
-//        Boolean is_valid = (Boolean)js.executeScript("return arguments[0].checkValidity();", field);
-//        String message = (String)js.executeScript("return arguments[0].validationMessage;", field);
-//        System.out.println(message);
-
-        String errorTxt = name.getAttribute(ErrorMessage);
-       Assert.assertEquals(ErrorMessage, errorTxt);
-
-
-
-      //  return errorMsgappear.isDisplayed();
-
-
     }
 
 

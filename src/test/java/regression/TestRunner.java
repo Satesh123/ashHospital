@@ -13,8 +13,8 @@ import java.net.MalformedURLException;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"pretty", "html:target/cucumber-html-report", "json:target/cucumber-json-report.json"}
-//        ,
-//        tags = {"@03"}
+        ,
+       tags = {"@03"}
 
 )
 
@@ -25,6 +25,7 @@ public class TestRunner {
     @BeforeClass
     public static void startBrowser() throws MalformedURLException {
         driver = BrowserFactory.getDriver();
+        driver.get("http://ahs.bananaapps.co.uk/");
     }
 
     @AfterClass
