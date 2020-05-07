@@ -2,16 +2,10 @@ package regression.PageObject;
 
 import com.devskiller.jfairy.Fairy;
 import com.devskiller.jfairy.producer.person.Person;
-import org.junit.Assert;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
-
-import static org.hamcrest.MatcherAssert.assertThat;
 
 public class CreateEditUserPage extends basePage {
 
@@ -29,7 +23,7 @@ public class CreateEditUserPage extends basePage {
     WebElement password;
 
     @FindBy(how = How.ID, using = "UserType")
-    WebElement userType;
+    WebElement userTypeDropDown;
 
     @FindBy(how = How.ID, using = "BranchID")
     WebElement branchId;
@@ -52,24 +46,11 @@ public class CreateEditUserPage extends basePage {
         mobileNumber.sendKeys(person.getTelephoneNumber());
         emailId.sendKeys(person.getEmail());
         password.sendKeys(person.getPassword());
-        Select selectUserType = new Select(userType);
+        Select selectUserType = new Select(userTypeDropDown);
         selectUserType.selectByVisibleText(UserType);
         Select selectBranch = new Select(branchId);
         selectBranch.selectByVisibleText("Visakhapatnam");
         submitButton.click();
-
-    }
-
-    private void clearUserDetails() {
-        name.clear();
-        mobileNumber.clear();
-        emailId.clear();
-        password.clear();
-        Select selectUserType = new Select(userType);
-        selectUserType.selectByVisibleText("- Select UserType -");
-        Select selectBranch = new Select(branchId);
-        selectBranch.selectByVisibleText("- Select Branch -");
-
 
     }
 
@@ -80,22 +61,24 @@ public class CreateEditUserPage extends basePage {
         mobileNumber.sendKeys(person.getTelephoneNumber());
         emailId.sendKeys(person.getEmail());
         password.sendKeys(person.getPassword());
-        Select selectUserType = new Select(userType);
+        Select selectUserType = new Select(userTypeDropDown);
         selectUserType.selectByVisibleText(UserType);
         Select selectBranch = new Select(branchId);
         selectBranch.selectByVisibleText("Visakhapatnam");
         editSubmitBtn.click();
     }
+    public boolean isUserCreated() { return userDetails.isDisplayed();}
+    public boolean isUserEdited() { return userDetails.isDisplayed(); }
 
-
-    public boolean isUserCreated() {
-
-        return userDetails.isDisplayed();
-
-    }
-
-    public boolean isUserEdited() {
-        return userDetails.isDisplayed();
+    private void clearUserDetails() {
+        name.clear();
+        mobileNumber.clear();
+        emailId.clear();
+        password.clear();
+        Select selectUserType = new Select(userTypeDropDown);
+        selectUserType.selectByVisibleText("- Select UserType -");
+        Select selectBranch = new Select(branchId);
+        selectBranch.selectByVisibleText("- Select Branch -");
     }
 
 

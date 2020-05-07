@@ -3,14 +3,9 @@ package regression.PageObject;
 import com.devskiller.jfairy.Fairy;
 import com.devskiller.jfairy.producer.BaseProducer;
 import com.devskiller.jfairy.producer.company.Company;
-import com.devskiller.jfairy.producer.payment.IBAN;
-import com.devskiller.jfairy.producer.person.Person;
-import com.devskiller.jfairy.producer.text.TextProducer;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-
-import java.text.spi.NumberFormatProvider;
 
 public class GroupTestPage extends basePage {
 
@@ -45,7 +40,7 @@ public class GroupTestPage extends basePage {
 
     }
 
-    public boolean newGroupTestCreated() {
+    public boolean isGroupTestCreated() {
         return groupTestList.isDisplayed();
     }
 

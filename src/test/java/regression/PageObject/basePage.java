@@ -8,8 +8,12 @@ public class basePage {
 
     WebDriver driver;
 
-    public basePage(){
+    public basePage() {
         driver = BrowserFactory.getDriver();
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
+
 }
+
+
+
