@@ -2,7 +2,7 @@ package regression.PageObject;
 
 import com.devskiller.jfairy.Fairy;
 import com.devskiller.jfairy.producer.BaseProducer;
-import com.devskiller.jfairy.producer.company.Company;
+import com.devskiller.jfairy.producer.person.Person;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -25,7 +25,7 @@ public class GroupTestPage extends basePage {
     WebElement groupTestList;
 
     Fairy fairy = Fairy.create();
-    Company group = fairy.company();
+    Person person = fairy.person();
     BaseProducer baseProducer = fairy.baseProducer();
 
     public void addGroupTest() {
@@ -34,7 +34,7 @@ public class GroupTestPage extends basePage {
 
       public void createNewGroupTest() {
 
-        groupTestName.sendKeys(group.getName());
+        groupTestName.sendKeys(person.getFullName());
         price.sendKeys(String.valueOf(baseProducer.randomBetween(50,300)));
         submitBtn.click();
 
@@ -42,6 +42,7 @@ public class GroupTestPage extends basePage {
 
     public boolean isGroupTestCreated() {
         return groupTestList.isDisplayed();
+
     }
 
 
