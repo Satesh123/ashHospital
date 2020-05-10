@@ -43,7 +43,7 @@ public class MyStepdefs extends TestRunner {
 
     }
 
-    @Given("^SuperAdmin logedIn$")
+    @Given("^SuperAdmin logIn$")
     public void superadminLogedIn() {
         loginPage.login("07442382353", "Superadmin");
     }
@@ -52,7 +52,6 @@ public class MyStepdefs extends TestRunner {
     public void heNavigateToMastersScreenAndSelectUsers() {
         mastersPage.gotoUsers();
     }
-
 
     @And("^He select Edit from action column$")
     public void heSelectEditFromActionColumn() {
@@ -102,5 +101,18 @@ public class MyStepdefs extends TestRunner {
     @Then("^New user created successfully$")
     public void newUserCreatedSuccessfully() {
         createEditUserPage.isUserCreated();
+    }
+
+    @When("^He go to action column and select delete$")
+    public void heGoToActionColumnAndSelectDelete()  {
+
+        mastersPage.deleteUser();
+
+    }
+
+    @Then("^user should be deleted successfully$")
+    public void userShouldBeDeletedSuccessfully() {
+        mastersPage.isUserDeleted();
+
     }
 }
