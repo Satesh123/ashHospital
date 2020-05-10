@@ -1,5 +1,6 @@
 package regression.PageObject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -29,6 +30,13 @@ public class MastersPage extends basePage {
     @FindBy(how = How.PARTIAL_LINK_TEXT, using = "Group Te")
     WebElement groupTest;
 
+    @FindBy(how = How.XPATH, using = "//th[@class='all sorting_asc']")
+    WebElement idColumn;
+
+    @FindBy(how = How.XPATH, using = "//tr[1]//td[9]//a[1]")
+    WebElement delete;
+
+
     public void gotoUsers() {
         mastersLink.click();
         usersLink.click();
@@ -48,6 +56,15 @@ public class MastersPage extends basePage {
     public void clickEdit() {
 
         edit.click();
+    }
+    public void deleteUser(){
+        idColumn.click();
+        delete.click();
+        driver.switchTo().alert().accept();
+
+    }
+    public void isUserDeleted(){
+        driver.findElement(By.xpath("//tr[1]//td[2]")).isDisplayed();
     }
 
     public boolean isUserLogedIn() {
