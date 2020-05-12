@@ -70,7 +70,6 @@ public class MyStepdefs extends TestRunner {
         createEditUserPage.isUserEdited();
     }
 
-
     @And("^He navigate to Masters screen and select Group Test$")
     public void heNavigateToMastersScreenAndSelectGroupTest() {
 
